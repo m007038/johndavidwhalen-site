@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Andrea Lead Alerts</title>
+<style>
+  :root { --ink:#1a1a1a; --muted:#666; --rule:#e5e5e5; --navy:#1B2A4A; }
+  body { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+         line-height:1.65; color:var(--ink); max-width:720px; margin:0 auto; padding:48px 24px 96px; }
+  h1 { font-size:28px; margin:0 0 8px; color:var(--navy); }
+  h2 { font-size:18px; margin:36px 0 10px; color:var(--navy); }
+  .updated { color:var(--muted); font-size:14px; margin-bottom:32px; padding-bottom:24px; border-bottom:1px solid var(--rule); }
+  p, li { font-size:15px; }
+  ul { padding-left:22px; }
+  a { color:var(--navy); }
+  footer { margin-top:56px; padding-top:24px; border-top:1px solid var(--rule); color:var(--muted); font-size:13px; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="updated">Andrea Lead Alerts · Last updated 29 August 2026</p>
+
+<p>This policy explains what data the Andrea Lead Alerts application accesses, how it is used, and how it is protected. It covers two distinct groups: the operator who installs the application, and prospective clients who message the WhatsApp assistant.</p>
+
+<h2>1. Who we are</h2>
+<p>Andrea Lead Alerts is operated by the business identified in the contact section below. The application is an internal business tool. It is not offered to the general public and is not used to process data on behalf of unrelated third parties.</p>
+
+<h2>2. Google account data</h2>
+<p>When the operator authorises this application with their Google Account, the application requests a single permission:</p>
+<ul>
+  <li><strong>https://www.googleapis.com/auth/gmail.send</strong> — permission to send email on the operator's behalf.</li>
+</ul>
+<p>This scope allows sending only. The application <strong>cannot read, search, delete, or modify</strong> any message in the operator's mailbox, and cannot access contacts, Drive, Calendar, or any other Google service.</p>
+<p>The permission is used for exactly one purpose: to send lead notification emails from the operator's own address to the operator's own inbox when the WhatsApp assistant qualifies a prospective client. No other email is sent using this permission.</p>
+<p>The application stores an OAuth refresh token so it can continue sending without re-authorisation. This token is held as an encrypted environment variable on the hosting provider and is never transmitted to any third party. The operator can revoke it at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, which immediately and permanently ends the application's access.</p>
+
+<h2>3. Limited Use disclosure</h2>
+<p>The use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements. Specifically, data obtained through Google APIs is not used for advertising, is not sold, is not transferred to third parties except as required to provide the service or to comply with law, and is not read by humans except with the operator's explicit consent, for security purposes, or where required by law.</p>
+
+<h2>4. Information from prospective clients</h2>
+<p>When someone messages the WhatsApp assistant, the following may be recorded in order to respond to their enquiry and pass it to the advisory team:</p>
+<ul>
+  <li>WhatsApp phone number and name, where given</li>
+  <li>Property requirements — budget, timeline, location preferences, property type</li>
+  <li>Circumstances relevant to the enquiry, such as residency plans, household composition, or financing approach</li>
+  <li>Email address, where voluntarily provided</li>
+  <li>A transcript of the conversation</li>
+</ul>
+<p>This information is provided voluntarily by the person messaging, is used solely to respond to their enquiry and arrange follow-up, and is stored in a private spreadsheet accessible only to the operator and the advisory team.</p>
+
+<h2>5. Processors we rely on</h2>
+<p>Conversation and lead data is processed by a small number of service providers, each solely to deliver this service:</p>
+<ul>
+  <li><strong>Meta (WhatsApp Business Platform)</strong> — message delivery</li>
+  <li><strong>Anthropic</strong> — generating the assistant's responses</li>
+  <li><strong>Google (Sheets, Gmail API)</strong> — lead storage and notification email</li>
+  <li><strong>OpenAI</strong> — transcription of voice notes, where a voice note is sent</li>
+  <li><strong>Railway</strong> — application hosting</li>
+</ul>
+<p>Lead information is not sold, rented, or shared for advertising purposes under any circumstances.</p>
+
+<h2>6. Retention</h2>
+<p>Conversation history is retained so the assistant can recognise a returning client and continue a prior conversation rather than starting over. A person may clear their entire conversation history at any time by sending the message <strong>/reset</strong> to the assistant, which permanently deletes the stored record of that conversation.</p>
+<p>Qualified lead records are retained in the operator's spreadsheet for as long as the enquiry remains commercially relevant, and are deleted on request.</p>
+
+<h2>7. Your rights</h2>
+<p>Under the EU General Data Protection Regulation, individuals whose data is processed have the right to request access to it, correct it, request its deletion, object to its processing, or request a portable copy. Requests can be made using the contact details below and are answered within 30 days.</p>
+
+<h2>8. Security</h2>
+<p>All credentials are stored as encrypted environment variables and are never committed to source control. Access to the lead spreadsheet is restricted to the operator and the advisory team. All data is transmitted over encrypted connections.</p>
+
+<h2>9. Changes</h2>
+<p>Material changes to this policy will be reflected in the "last updated" date above.</p>
+
+<h2>10. Contact</h2>
+<p>Questions about this policy, or requests concerning personal data, can be sent to:<br>
+<strong>johndavid.w.whalen@gmail.com</strong></p>
+
+<footer>Andrea Lead Alerts · This application is an internal business tool and is not offered for general public sign-up.</footer>
+
+</body>
+</html>
