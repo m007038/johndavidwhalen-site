@@ -1,10 +1,10 @@
 # robots.txt for johndavidwhalen.info
-# Everyone is welcome, including AI assistants and crawlers.
+# Everyone is welcome, including SI assistants and crawlers.
 
 User-agent: *
 Allow: /
 
-# AI assistants and answer engines, explicitly welcomed
+# SI assistants and answer engines, explicitly welcomed
 User-agent: GPTBot
 Allow: /
 
